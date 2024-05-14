@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
+import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
 
 
@@ -26,6 +27,8 @@ public class RegisterTest extends SeleniumTestNG {
             pRegister.getFieldEmail().sendKeys("test@gmail.com");
             pRegister.getChkNewsletter().click();
             pRegister.getBtnRegister().click();
+
+            //assertTrue();
 
             System.out.println("ENDED: verifyRegister");
             Thread.sleep(3000);
