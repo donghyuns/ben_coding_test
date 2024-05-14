@@ -1,0 +1,23 @@
+Part 5: Problem-Solving Questions
+
+Scenario 1: During a release cycle, you find that the number of bugs reported in the new
+features is significantly higher than in the previous releases. The development team claims that
+the features were developed according to specifications.
+Task: Write a response detailing how you would handle this situation, including steps to identify
+the root cause and possible solutions to reduce the number of bugs in future releases.
+
+--> Bugs can be increased from various reasons.
+    1) If the new feature are more complex and difficult to implement than the previous features, it's natural.
+       We may have needed more time and need to improve the process of estimation.
+    2) If the difficulty of the feature is similar to the previous, we need to review our release process and CI/CD pipeline to see any merge issue can happen.
+
+
+Scenario 2: You are part of a QA team that is transitioning from manual to automated testing.
+However, some team members are resistant to this change, citing a lack of experience in
+programming.
+Task: Describe how you would address this challenge to ensure a smooth transition to
+automated testing while keeping the team motivated and engaged.
+
+--> I would talk about our career path as a technical QA. If we agree on the technical QA, the next step is how to achieve it.
+    We understand how difficult it is to transition to an automation QA. As a team, we can support together providing training, sharing knowledge,
+    we don't be hurry for that, but we will continue to go with it and eventually we will get it.

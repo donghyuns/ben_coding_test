@@ -1,0 +1,30 @@
+Part 6: Tool Proficiency
+
+Task 1 (JIRA): Given a scenario where multiple high-priority bugs have been reported in a new
+feature, draft a bug report for one of these bugs in JIRA. Include fields like Summary,
+Description, Steps to Reproduce, Expected Result, Actual Result, Priority, and Attachments (if
+applicable).
+
+    Jira bug report:
+    Summary: describe the issue clearly avoiding ambiguous words like improper.
+    Description:
+        - Prerequisite
+        - Steps to reproduce
+        - Actual result
+        - Expected result
+        - Comment (if necessary)
+        - Attach screenshots or video recordings
+    Environment:
+        - Dev or Stage
+        - Device models
+        - App version
+    Priority
+    Sprint
+    Fix version (if we can)
+    Assignee
+
+
+Task 2 (Postman): Create a collection in Postman to test a simple REST API (e.g., a CRUD API for
+users in our app). The collection should include requests for creating a new user, retrieving
+information about a user, updating a user, and deleting a user. Include tests in each request to
+validate the response status code and response body.

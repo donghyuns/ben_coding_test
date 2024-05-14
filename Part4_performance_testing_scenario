@@ -1,0 +1,36 @@
+Part 4: Performance Testing Scenario
+Scenario: You are given a basic cloud service that is the entry point for our mobile app. This
+service is responsible for signing up and signing in users and related helper functionalities. This
+application is expected to handle up to 10,000 concurrent users during peak hours.
+Task: Develop a performance testing plan outlining the following aspects:
+
+Performance test Plan
+1. Objectives
+    - To verify if the system can manage 10,000 concurrent users when logging in under less than 2sce response time
+    - To verify if the system can manage 10,000 concurrent log-ins
+    - To monitor the system's CPU usage, memory usage, disk usage
+2. Tool
+    - It could be better to use LoadRunner because it provides detailed resource monitors and features that can merge different monitors into one.
+      i.e. Can merge CPU usage graph with Response time graph, so that we can see if there's any bottleneck.
+3. Test Cases
+    - 9,800 users log in with 20 users ramp up in 30sec interval
+    - 200 users sign up with 10 users ramp up in 60sec interval
+    - Then 5,000 users are searching for different titles of books,
+           4,000 users are viewing book details,
+           1,000 users are adding to cart
+    - Each transactions have 10sec think-time.
+4. Metrics
+    - Response time, CPU usage, Memory usage, Disk usage
+    - Throughput
+    - Network traffic (to check if there's any mis-configurations)
+5. Test Environment
+    - 1 test controller machine, several load generators
+    - Use backbone network to reduce network bottleneck
+    - Server configuration needs to the same as production or similar
+    - Any cache off in network devices if necessary
+    - Enough data needs to be stored in database
+6. Analysis
+    - Response time to see if it satisfies our requirement
+    - To check the point that response time is increased
+      if CPU/memory/disk usages are the same but only response time is increased, that could mean there's logic bottleneck.
+
