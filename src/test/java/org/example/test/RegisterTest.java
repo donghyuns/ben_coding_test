@@ -19,12 +19,13 @@ public class RegisterTest extends SeleniumTestNG {
         try {
             System.out.println("STARTED: verifyRegister");
             driver.get("http://13.209.85.69/");
-            RegisterPage pRegister = new RegisterPage();
-            pRegister.getFieldUserName(driver).sendKeys("testtest");
-            pRegister.getFieldPassword(driver).sendKeys("12345678");
-            pRegister.getFieldEmail(driver).sendKeys("test@gmail.com");
-            pRegister.getChkNewsletter(driver).click();
-            pRegister.getBtnRegister(driver).click();
+            Thread.sleep(2000);
+            RegisterPage pRegister = new RegisterPage(driver);
+            pRegister.getFieldUserName().sendKeys("testtest");
+            pRegister.getFieldPassword().sendKeys("12345678");
+            pRegister.getFieldEmail().sendKeys("test@gmail.com");
+            pRegister.getChkNewsletter().click();
+            pRegister.getBtnRegister().click();
 
             System.out.println("ENDED: verifyRegister");
             Thread.sleep(3000);

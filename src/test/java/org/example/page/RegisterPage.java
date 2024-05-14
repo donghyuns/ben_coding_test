@@ -3,22 +3,33 @@ package org.example.page;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class RegisterPage {
-    @FindBy (id = "username")
+    protected WebDriver driver;
+    protected WebDriverWait wait;
+    public RegisterPage(WebDriver driver) {
+        this.driver = driver;
+        this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(60), Duration.ofMillis(1000));
+        PageFactory.initElements(driver, this);
+    }
+    @FindBy (xpath = "//*[@id='username']")
     WebElement fieldUserName;
-    @FindBy (id = "password")
+    @FindBy (xpath = "//*[@id='password']")
     WebElement fieldPassword;
-    @FindBy (id = "email")
+    @FindBy (xpath = "//*[@id='email']")
     WebElement fieldEmail;
-    @FindBy (id = "newsletter")
+    @FindBy (xpath = "//*[@id='newsletter']")
     WebElement chkNewsletter;
     @FindBy (xpath = "//input[@type='submit']")
     WebElement btnRegister;
 
-    public WebElement getFieldUserName(WebDriver driver) { return fieldUserName; }
-    public WebElement getFieldPassword(WebDriver driver) { return fieldPassword; }
-    public WebElement getFieldEmail(WebDriver driver) { return fieldEmail; }
-    public WebElement getChkNewsletter(WebDriver driver) { return chkNewsletter; }
-    public WebElement getBtnRegister(WebDriver driver) { return btnRegister; }
+    public WebElement getFieldUserName() { return fieldUserName; }
+    public WebElement getFieldPassword() { return fieldPassword; }
+    public WebElement getFieldEmail() { return fieldEmail; }
+    public WebElement getChkNewsletter() { return chkNewsletter; }
+    public WebElement getBtnRegister() { return btnRegister; }
 }
