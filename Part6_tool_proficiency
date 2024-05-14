@@ -41,3 +41,7 @@ Retrieve user:
         pm.expect(jsonData.msgCode).to.eql('OK');
 
     })
+
+
+Couldn't write all the scripts because TIME IS UP.
+Thank you!

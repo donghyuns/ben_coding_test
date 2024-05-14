@@ -15,6 +15,7 @@ Bug Report 1)
         Can register with the account without an error.
     Expected result
         It should show an error when the email format is wrong.
+    Severity: Major
 
 Bug Report 2)
     Summary: Can register with an empty spaces of the username
@@ -28,3 +29,4 @@ Bug Report 2)
         Can register with the account without an error.
     Expected result
         Empty spaces of name needs to be prevented from registering.
+    Severity: Major
