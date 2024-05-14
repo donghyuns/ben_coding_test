@@ -1,0 +1,13 @@
+Part 1: Test Case Writing
+Scenario: A new feature in a web application allows users to register an account. The
+registration form includes fields for username, password, email, and a "Subscribe to
+newsletter" checkbox.
+Task: Write a set of test cases covering functional, boundary, and edge cases.
+
+tc1) Verify if users can register with a username, password, valid email format without subscribing to newsletter
+tc2) Check if an error message shows when there's any empty field in username, password, email
+tc3) Check if an error shows when email format is wrong
+tc4) Verify the password rule if an error message shows when the input password doesn't satisfy with the rule (empty space, special characters, etc)
+tc5) Check the length of the password if an error shows when it's less than than 8 characters
+tc6) Verify if users can register with subscribing the newsletter
+tc7) Verify the username if it requires more than 5 characters

@@ -1,0 +1,30 @@
+Part 2: Bug Identification and Reporting
+Scenario: having the page hosted in this server: http://13.209.85.69/
+Task: Identify, document, and report the bugs. Emphasize clarity and detail in the bug report,
+including steps to reproduce, expected vs. actual results, and severity assessment.
+
+
+Bug Report 1)
+    Summary: Can register with an invalid email format
+    Steps to reproduce
+        1. Go to http://13.209.85.69/
+        2. Input an username and valid password (i.e. testtest/12345678)
+        3. Input any wrong email format (i.e. dh@gmail)
+        4. Click on Register button
+    Actual result
+        Can register with the account without an error.
+    Expected result
+        It should show an error when the email format is wrong.
+
+Bug Report 2)
+    Summary: Can register with an empty spaces of the username
+    Steps to reproduce
+        1. Go to http://13.209.85.69/
+        2. Input 5 empty space in the username ("     ")
+        3. Input an valid password (12345678)
+        4. Input an valid email format (testtest@gmail.com)
+        5. Click on Register button
+    Actual result
+        Can register with the account without an error.
+    Expected result
+        Empty spaces of name needs to be prevented from registering.
