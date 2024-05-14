@@ -1,3 +1,8 @@
 Part 3: Automated Testing Challenge (optional writing the full script)
 Scenario: having the page hosted in this server: http://13.209.85.69/
 Task: Write a script that automates the test for the page hosted above.
+
+
+
+Please run in terminal where pom.xml file is: mvn test
+or run testng.xml in IDE.
