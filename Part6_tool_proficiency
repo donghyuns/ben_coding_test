@@ -28,3 +28,16 @@ Task 2 (Postman): Create a collection in Postman to test a simple REST API (e.g.
 users in our app). The collection should include requests for creating a new user, retrieving
 information about a user, updating a user, and deleting a user. Include tests in each request to
 validate the response status code and response body.
+
+Create User:
+    pm.test("CreateUser", () => {
+        const jsonData = pm.response.json();
+        pm.expect(jsonData.msgCode).to.eql('OK');
+    })
+
+Retrieve user:
+    pm.test("RetrieveUser", () => {
+        const jsonData = pm.response.json();
+        pm.expect(jsonData.msgCode).to.eql('OK');
+
+    })
